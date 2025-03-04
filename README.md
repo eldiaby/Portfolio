@@ -18,7 +18,6 @@ Follow the steps below to get the project up and running locally.
 Before running the project, ensure that you have the following installed:
 
 - [Node.js](https://nodejs.org/en/)
-- [Angular CLI](https://angular.io/cli)
 
 ### Getting Started
 
@@ -26,28 +25,36 @@ Before running the project, ensure that you have the following installed:
 
    ```bash
    git clone https://github.com/eldiaby/Portfolio.git
-
-    Navigate to the project directory:
    ```
 
+Navigate to the project directory:
+
+```bash
 cd ./Portfolio
+```
 
 Install the required dependencies:
 
+```bash
     npm install
+```
 
 Running the Application
 
 To start the application in development mode:
 
+```bash
 npm start
+```
 
 This will launch the front-end server and open the portfolio in your browser.
 Build for Production
 
 To build the project for production (optimized for deployment), use the following command:
 
+```bash
 npm run build:project
+```
 
 This will minify the code and optimize the website for better performance.
 
