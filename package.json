@@ -1,0 +1,61 @@
+{
+  "name": "Eldiaby Hosny portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass ./sass/style.scss ./css/style.css --no-source-map --watch",
+    "devserver": "live-server --browser=firefox",
+    "compress:js": "terser ./js/bootstrap.min.js ./js/lightbox-plus-jquery.min.js ./js/script.js -o ./js/script.min.js",
+    "start": "npm-run-all --parallel devserver compress:js sass:watch",
+    "sass:build": "sass sass/style.scss css/style.comp.css --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./css/style.comp.css -o ./css/style.prefix.css",
+    "compress:sass": "sass ./css/style.prefix.css ./css/style.css --style=compressed --no-source-map",
+    "build:html": "html-minifier-terser ./index.html --output ./dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
+    "build:css": "npm-run-all sass:build prefix:css compress:sass",
+    "copy:css": "cp ./css/style.css ./dist/css/style.css",
+    "build:js": "terser ./js/bootstrap.min.js ./js/lightbox-plus-jquery.min.js ./js/script.js -o ./js/script.min.js --compress",
+    "copy:js": "cp ./js/script.min.js ./dist/js/script.min.js",
+    "copy:images": "cp -r ./images/* ./dist/images",
+    "copy:webfonts": "cp -r ./webfonts/* ./dist/webfonts",
+    "clean:dist": "rimraf ./dist",
+    "create:dist": "mkdirp ./dist/css ./dist/js ./dist/images ./dist/webfonts",
+    "build:project": "npm-run-all clean:dist create:dist build:css copy:css build:js copy:js build:html copy:images copy:webfonts"
+  },
+  "keywords": [
+    "MEAN stack",
+    "Fullstack web development",
+    "MongoDB",
+    "Express.js",
+    "Angular",
+    "Node.js",
+    "JavaScript",
+    "Web Development",
+    "Portfolio",
+    "Responsive Design",
+    "SEO",
+    "Front-End Development",
+    "Back-End Development"
+  ],
+  "author": "Eldiaby Hosny",
+  "license": "ISC",
+  "description": "A fullstack portfolio website using the MEAN Stack (MongoDB, Express.js, Angular, Node.js). Optimized for performance, SEO, and responsive web design. Built by Eldiaby Hosny to showcase web development skills and expertise in modern technologies.",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
+    "concat": "^1.0.3",
+    "html-minifier-terser": "^7.2.0",
+    "mkdirp": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.85.1",
+    "terser": "^5.39.0"
+  },
+  "browserslist": [
+    "last 10 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
