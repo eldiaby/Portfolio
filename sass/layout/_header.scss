@@ -1,0 +1,46 @@
+.header {
+  background: #151515 url('./../images/intro-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+  }
+
+  &__text-container {
+    z-index: 2;
+  }
+
+  &__roles {
+    font-family: 'serif';
+
+    span {
+      @media only screen and (max-width: 767px) {
+        font-size: 18px !important;
+        display: block;
+      }
+    }
+  }
+
+  &__social-links {
+    bottom: 50px;
+
+    @media only screen and (max-width: 767px) {
+      gap: 18px !important;
+    }
+
+    i {
+      @media only screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
