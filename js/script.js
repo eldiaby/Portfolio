@@ -35,7 +35,7 @@ const deleteText = function (typingEl, text, delay, callback) {
 };
 
 const runTypingEffect = function () {
-  const text = ' am Eldiab Hosny'; // The text after 'I'
+  const text = ' am Eldiaby Hosny'; // The text after 'I'
   const typingEl = document.getElementById('typing-text');
   const typingDelay = 100; // Delay between typing each letter
 

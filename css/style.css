@@ -13035,6 +13035,269 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.header {
+  background: #151515 url("./../images/intro-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.header__text-container {
+  z-index: 2;
+}
+.header__typing-text {
+  display: inline-block;
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: 3px solid var(--bs-primary); /* Cursor effect */
+  padding-right: 5px;
+  opacity: 1;
+  animation: blink 0.75s step-end infinite, slide-in 1s ease-out; /* Combine multiple animations */
+}
+@media only screen and (max-width: 767px) {
+  .header__typing-text {
+    font-size: 32px !important;
+  }
+}
+.header__roles {
+  font-family: "serif";
+}
+@media only screen and (max-width: 767px) {
+  .header__roles span {
+    font-size: 18px !important;
+    display: block;
+  }
+}
+.header__social-links {
+  bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .header__social-links {
+    gap: 18px !important;
+  }
+}
+.header__social-links i {
+  transition: color 0.3s ease;
+}
+@media only screen and (max-width: 767px) {
+  .header__social-links i {
+    font-size: 30px !important;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-20px); /* Starts from left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slides in to its original position */
+    opacity: 1;
+  }
+}
+/* Facebook Icon */
+.facebook-icon i {
+  color: #1877f2; /* Facebook blue color */
+}
+
+.facebook-icon:hover i {
+  color: #005fb2; /* Darker blue on hover */
+}
+
+/* YouTube Icon */
+.youtube-icon i {
+  color: #ff0000; /* YouTube red color */
+}
+
+.youtube-icon:hover i {
+  color: #cc0000; /* Darker red on hover */
+}
+
+/* LinkedIn Icon */
+.linkedin-icon i {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.linkedin-icon:hover i {
+  color: #005b88; /* Darker blue on hover */
+}
+
+/* GitHub Icon */
+.github-icon i {
+  color: #333; /* GitHub dark color */
+}
+
+.github-icon:hover i {
+  color: #24292f; /* Darker color on hover */
+}
+
+/* Instagram Icon */
+.instagram-icon i {
+  color: #e1306c; /* Instagram pink color */
+}
+
+.instagram-icon:hover i {
+  color: #c13584; /* Darker pink on hover */
+}
+
+/* Twitter Icon */
+.twitter-icon i {
+  color: #1da1f2; /* Twitter blue color */
+}
+
+.twitter-icon:hover i {
+  color: #0d95e8; /* Darker blue on hover */
+}
+
+.about__image {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.section-services {
+  background-image: url("./../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-services .container {
+  z-index: 2;
+}
+.section-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 767px) {
+  .section-stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 42px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 18px;
+  }
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
