@@ -50,18 +50,22 @@ To build the project for production (optimized for deployment), use the followin
 npm run build:project
 
 This will minify the code and optimize the website for better performance.
-Technologies Used
 
-    Frontend:
-        Bootstrap
-        Sass (CSS preprocessor)
-        JavaScript
-    Development Tools:
-        npm
-        Angular CLI
-        Live-server (for local development)
+## Technologies Used
 
-Author
+- **Frontend**:
+
+  - Bootstrap
+  - Sass (CSS preprocessor)
+  - JavaScript
+  - Font Awesome (for icons)
+  - Lightbox (for image gallery functionality)
+
+- **Development Tools**:
+  - npm
+  - Live-server (for local development)
+
+## Author
 
 Eldiaby Hosny
 A Fullstack Web Developer specializing in MEAN Stack (MongoDB, Express.js, Angular, Node.js).
@@ -69,6 +73,6 @@ GitHub Profile
 LinkedIn Profile ()
 Portfolio ()
 
-License
+## License
 
 This project is licensed under the ISC License - see the LICENSE file for details
