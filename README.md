@@ -39,7 +39,7 @@ Install the required dependencies:
     npm install
 ```
 
-Running the Application
+## Running the Application
 
 To start the application in development mode:
 
@@ -61,13 +61,11 @@ This will minify the code and optimize the website for better performance.
 ## Technologies Used
 
 - **Frontend**:
-
   - Bootstrap
   - Sass (CSS preprocessor)
   - JavaScript
   - Font Awesome (for icons)
   - Lightbox (for image gallery functionality)
-
 - **Development Tools**:
   - npm
   - Live-server (for local development)
@@ -83,3 +81,15 @@ Portfolio ()
 ## License
 
 This project is licensed under the ISC License - see the LICENSE file for details
+
+## Educational Project
+
+This project is part of a **learning course** and is not my personal portfolio. The projects and code included here are solely for educational purposes, to demonstrate and practice concepts I have learned during the course.
+
+### Notes:
+
+- This project does **not** represent my personal portfolio.
+- The projects and code mentioned here do **not** belong to me personally, and are created as part of the course for learning purposes.
+- The goal of this project is to help me learn and apply various web development concepts.
+
+Thank you for visiting!
