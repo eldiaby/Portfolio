@@ -15,3 +15,26 @@
   transition: all 0.3s ease-in-out;
   opacity: 0.8;
 }
+
+// Services section
+.section-services {
+  background-image: url('./../images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & .container {
+    z-index: 2;
+  }
+
+  // Overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
