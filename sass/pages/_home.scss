@@ -1,0 +1,10 @@
+.about__image {
+  width: 200px;
+  height: 200px;
+}
+
+.about-content {
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}

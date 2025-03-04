@@ -26,6 +26,10 @@
     padding-right: 5px;
     opacity: 1;
     animation: blink 0.75s step-end infinite, slide-in 1s ease-out; /* Combine multiple animations */
+
+    @media only screen and (max-width: 767px) {
+      font-size: 32px !important;
+    }
   }
 
   &__roles {
