@@ -51,6 +51,8 @@
     }
 
     i {
+      transition: color 0.3s ease;
+
       @media only screen and (max-width: 767px) {
         font-size: 30px !important;
       }
@@ -73,4 +75,60 @@
     transform: translateX(0); /* Slides in to its original position */
     opacity: 1;
   }
+}
+
+// Icons animation
+
+/* Facebook Icon */
+.facebook-icon i {
+  color: #1877f2; /* Facebook blue color */
+}
+
+.facebook-icon:hover i {
+  color: #005fb2; /* Darker blue on hover */
+}
+
+/* YouTube Icon */
+.youtube-icon i {
+  color: #ff0000; /* YouTube red color */
+}
+
+.youtube-icon:hover i {
+  color: #cc0000; /* Darker red on hover */
+}
+
+/* LinkedIn Icon */
+.linkedin-icon i {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.linkedin-icon:hover i {
+  color: #005b88; /* Darker blue on hover */
+}
+
+/* GitHub Icon */
+.github-icon i {
+  color: #333; /* GitHub dark color */
+}
+
+.github-icon:hover i {
+  color: #24292f; /* Darker color on hover */
+}
+
+/* Instagram Icon */
+.instagram-icon i {
+  color: #e1306c; /* Instagram pink color */
+}
+
+.instagram-icon:hover i {
+  color: #c13584; /* Darker pink on hover */
+}
+
+/* Twitter Icon */
+.twitter-icon i {
+  color: #1da1f2; /* Twitter blue color */
+}
+
+.twitter-icon:hover i {
+  color: #0d95e8; /* Darker blue on hover */
 }
